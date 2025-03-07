@@ -1,6 +1,6 @@
 #![deny(warnings)]
 // FIXME(static_mut_refs): Do not allow `static_mut_refs` lint
-#![allow(static_mut_refs)]
+#![allow(static_mut_refs, redundant_transmutation)]
 
 use std::cell::RefCell;
 use std::fmt::{self, Write};
