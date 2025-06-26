@@ -3516,8 +3516,6 @@ pub trait Iterator {
     /// Basic usage:
     ///
     /// ```
-    /// #![feature(iter_array_chunks)]
-    ///
     /// let mut iter = "lorem".chars().array_chunks();
     /// assert_eq!(iter.next(), Some(['l', 'o']));
     /// assert_eq!(iter.next(), Some(['r', 'e']));
@@ -3526,8 +3524,6 @@ pub trait Iterator {
     /// ```
     ///
     /// ```
-    /// #![feature(iter_array_chunks)]
-    ///
     /// let data = [1, 1, 2, -2, 6, 0, 3, 1];
     /// //          ^-----^  ^------^
     /// for [x, y, z] in data.iter().array_chunks() {
@@ -3535,7 +3531,7 @@ pub trait Iterator {
     /// }
     /// ```
     #[track_caller]
-    #[unstable(feature = "iter_array_chunks", reason = "recently added", issue = "100450")]
+    #[stable(feature = "iter_array_chunks", since = "CURRENT_RUSTC_VERSION")]
     fn array_chunks<const N: usize>(self) -> ArrayChunks<Self, N>
     where
         Self: Sized,

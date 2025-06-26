@@ -28,7 +28,7 @@ mod take;
 mod take_while;
 mod zip;
 
-#[unstable(feature = "iter_array_chunks", reason = "recently added", issue = "100450")]
+#[stable(feature = "iter_array_chunks", since = "CURRENT_RUSTC_VERSION")]
 pub use self::array_chunks::ArrayChunks;
 #[unstable(feature = "std_internals", issue = "none")]
 pub use self::by_ref_sized::ByRefSized;

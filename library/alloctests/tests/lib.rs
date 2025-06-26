@@ -1,6 +1,5 @@
 #![feature(allocator_api)]
 #![feature(alloc_layout_extra)]
-#![feature(iter_array_chunks)]
 #![feature(assert_matches)]
 #![feature(btree_extract_if)]
 #![feature(char_max_len)]

@@ -380,7 +380,7 @@ macro_rules! impl_fold_via_try_fold {
     };
 }
 
-#[unstable(feature = "iter_array_chunks", reason = "recently added", issue = "100450")]
+#[stable(feature = "iter_array_chunks", since = "CURRENT_RUSTC_VERSION")]
 pub use self::adapters::ArrayChunks;
 #[unstable(feature = "std_internals", issue = "none")]
 pub use self::adapters::ByRefSized;
